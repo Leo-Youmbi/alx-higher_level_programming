@@ -12,5 +12,6 @@ if __name__ == "__main__":
     elif numArgs == 1:
         print("1 argument:")
     else:
-        for i in range(numArgs):
-            print("{}: {}".format(i + 1, args[0]))
+        print("{} arguments:".format(numArgs))
+    for i in range(numArgs):
+        print("{}: {}".format(i + 1, args[i]))
