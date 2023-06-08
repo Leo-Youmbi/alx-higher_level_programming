@@ -8,5 +8,5 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     numArgs = len(args)
     for i in range(numArgs):
-        sum += int(args)
+        sum += int(args[i])
     print("{}".format(sum))
