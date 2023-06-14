@@ -8,4 +8,5 @@ def best_score(a_dictionary):
     for i in range(1, len(tup)):
         if tup[i][1] > best:
             best = tup[i][1]
-    return best
+            bestStudent = tup[i][0]
+    return bestStudent
