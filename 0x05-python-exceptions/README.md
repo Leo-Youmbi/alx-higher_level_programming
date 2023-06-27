@@ -1,8 +1,169 @@
 In this project, I learned handling errors and exceptions in Python with try, except and finally.  
-  
-  
-The bytecode used in the [magic_calculation](./102-magic_calculation.py) task is:  
-```
+
+# Python - More Data Structures: Set, Dictionary
+
+In this project, I learned about sets and dictionaries in Python. I practiced using them
+with the `lambda`, `map`, `filter`, and `reduce` methods.
+
+
+## Function Prototypes :floppy_disk:
+
+Prototypes for functions written in this project:
+
+| File                           | Prototype                                                                                                 |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| `0-safe_print_list.py`    | `def safe_print_list(my_list=[], x=0):`                                                                    |
+| `1-safe_print_integer.py`          | `def safe_print_integer(value):`                                                           |
+| `2-safe_print_list_integers.py`                | `def safe_print_list_integers(my_list=[], x=0):`                                                                               |
+| `3-safe_print_division.py`         | `def safe_print_division(a, b):`                                                                      |
+| `4-list_division.py`      | `def list_division(my_list_1, my_list_2, list_length):`                                                                   |
+| `5-raise_exception.py`             | `def raise_exception():`                                                                          |
+| `6-raise_exception_msg.py` | `def raise_exception_msg(message=""):`                                                              |
+| `7-update_dictionary.py`       | `def update_dictionary(a_dictionary, key, value):`                                                        |
+| `8-simple_delete.py`           | `def simple_delete(a_dictionary, key=""):`                                                                |
+| `9-multiply_by_2.py`           | `def multiply_by_2(a_dictionary):`                                                                        |
+| `10-best_score.py`             | `def best_score(a_dictionary):`                                                                           |
+| `11-mutiply_list_map.py`       | `def mutiply_list_map(my_list=[], number=0):`                                                             |
+| `12-roman_to_int.py`           | `def roman_to_int(roman_string):`                                                                         |
+| `100-safe_print_integer_err.py`        | `def safe_print_integer_err(value):`                                                                         |
+| `101-safe_function.py`     | `def safe_function(fct, *args):`                                                                       |
+| `102-magic_calculation.py`        | `def magic_calculation(a, b):`                                                                |
+| `103-python.c`                 | <ul><li>`void print_python_list(PyObject *p);`</li><li>`void print_python_bytes(PyObject *p);`</li></ul> |
+
+## Tasks :page_with_curl:
+
+* **0. Safe list printing**
+  * [0-safe_print_list.py](./0-safe_print_list.py): Python function that prints `x` elements of a list.
+  * `my_list` can contain any type (integer, string, etc.).
+  * All elements must be printed on the same line followed by a new line.
+  * `x` represents the number of elements to print.
+  * `x` can be bigger than the length of `my_list`.
+  * Returns the real number of elements printed.
+  * You have to use `try: / except:`.
+  * You are not allowed to import any module.
+  * You are not allowed to use `len()`.
+
+* **1. Safe printing of an integers list**
+  * [1-safe_print_integer.py](./1-safe_print_integer.py): Python function that prints an integer with `"{:d}".format()`.
+  * `value` can be any type (integer, string, etc.)
+  * The integer should be printed followed by a new line
+  * Returns `True` if `value` has been correctly printed (it means the `value` is an integer)
+  * Otherwise, returns `False`
+  * You have to use `try: / except:`
+  * You have to use `"{:d}".format()` to print as integer
+  * You are not allowed to import any module
+  * You are not allowed to use `type()`
+
+* **2. Print and count integers**
+  * [2-safe_print_list_integers.py](./2-safe_print_list_integers.py): Python function that prints the first `x` elements of a list and only integers.
+  * `my_list` can contain any type (integer, string, etc.)
+  * All integers have to be printed on the same line followed by a new line - other type of value in the list must be skipped (in silence).
+  * `x` represents the number of elements to access in `my_list`
+  * `x` can be bigger than the length of `my_list` - if it’s the case, an exception is expected to occur.
+  * Returns the real number of integers printed
+  * You have to use `try: / except:`
+  * You have to use `"{:d}".format()` to print an integer
+  * You are not allowed to import any module
+  * You are not allowed to use `len()`
+
+
+* **3. Integers division with debug**
+  * [3-safe_print_division.py](./3-safe_print_division.py): Python function that divides 2 integers and prints the result.
+  * You can assume that `a` and `b` are integers
+  * The result of the division should print on the `finally:` section preceded by `Inside result:`
+  * Returns the value of the division, otherwise: `None`
+  * You have to use `try: / except: / finally:`
+  * You have to use `"{}".format()` to print the result
+  * You are not allowed to import any module
+
+* **4. Divide a list**
+  * [4-list_division.py](./4-list_division.py): Python function that divides element by element 2 lists.
+  * `my_list_1` and `my_list_2` can contain any type (integer, string, etc.)
+  * `list_length` can be bigger than the length of both lists.
+  * Returns a new list (length = `list_length`) with all divisions.
+  * If 2 elements can’t be divided, the division result should be equal to `0`.
+  * If an element is not an integer or float:
+    * print: `wrong type`
+  * If the division can’t be done (`/0`):
+    * print: `division by 0`
+  * If `my_list_1` or `my_list_2` is too short
+    * print: `out of range`
+  * You have to use `try: / except: / finally:`
+  * You are not allowed to import any module
+
+* **5. Raise exception**
+  * [5-raise_exception.py](./5-raise_exception.py): Python function that raises a type exception.
+  * You are not allowed to import any module
+
+* **6. Raise a message**
+  * [6-raise_exception_msg.py](./6-raise_exception_msg.py): Python function that
+  raises a name exception with a message.
+  * You are not allowed to import any module
+
+* **7. Update dictionary**
+  * [7-update_dictionary.py](./7-update_dictionary.py): Python function that replaces or
+  adds key/value pairs in a dictionary.
+  * The parameter `key` is always a string.
+  * The parameter `value` is any type.
+  * If a key exists in the dictionary, the value is replaced.
+  * If a key does not exist in the dictionary, it is created.
+  * Without importing modules.
+
+* **8. Simple delete by key**
+  * [8-simple_delete.py](./8-simple_delete.py): Python function that deletes a key
+  in a dictionary.
+  * The paramter `key` is always a string.
+  * If the key does not exist, the dictionary does not change.
+  * Without importing modules.
+
+* **9. Multiply by 2**
+  * [9-multiply_by_2.py](./9-multiply_by_2.py): Python function that returns a
+  new dictionary with all values multiplied by 2.
+  * The function assumes all values are integers.
+  * Without importing modules.
+
+* **10. Best score**
+  * [10-best_score.py](./10-best_score.py): Python function that returns a key value
+  with the biggest integer value.
+  * The function assumes all values are integers.
+  * The function assumes all students have a different score.
+  * If no score is found, the functino returns `None`.
+  * Without importing modules.
+
+* **11. Multiply by using map**
+  * [11-mutiply_list_map.py](./11-multiply_list_map.py): Python function that returns a
+  list with all values multiplied by a number using `map`.
+  * Returns a new length of the same length has `my_list` with each value
+  multiplied by `number`.
+  * The initial list is not modified.
+  * Without using loops or importing modules.
+
+* **12. Roman to Integer**
+  * [12-roman_to_int.py](./12-roman_to_int.py): Python function that converts a roman
+  numeral to an integer.
+  * The function assumes the number will be between 1-3999.
+  * If the parameter `roman_string` is not a string or `None`, the function returns `0`.
+
+* **7. Safe integer print with error message**
+  * [100-safe_print_integer_err.py](./100-safe_print_integer_err.py): Python function that prints an integer.
+  * `value` can be any type (integer, string, etc.)
+  * The integer should be printed followed by a new line.
+  * Returns `True` if value has been correctly printed (it means the value is an integer)
+  * Otherwise, returns `False` and prints in `stderr` the error precede by `Exception:`
+  * You have to use `try: / except:`
+  * You have to use `"{:d}".format()` to print as integer.
+  * You are not allowed to use `type()`.
+
+* **8. Safe function**
+  * [101-safe_function.py](./101-safe_function.py): Python function that executes a function safely.
+  * You can assume `fct` will be always a pointer to a function
+  * Returns the result of the function,
+  * Otherwise, returns `None` if something happens during the function and prints in `stderr` the error precede by `Exception:`
+  * You have to use `try: / except:`
+
+* **9. ByteCode -> Python #4**
+  * [102-magic_calculation.py](./102-magic_calculation.py): Python function that does exactly the same as the following Python bytecode:  
+  ```
   3           0 LOAD_CONST               1 (0)
               3 STORE_FAST               2 (result)
 
@@ -57,4 +218,4 @@ The bytecode used in the [magic_calculation](./102-magic_calculation.py) task is
 
  13     >>  103 LOAD_FAST                2 (result)
             106 RETURN_VALUE
-```
+  ```
