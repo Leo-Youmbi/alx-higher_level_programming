@@ -1,6 +1,6 @@
 # Python - Exceptions
 
-In this project, I learned handling errors and exceptions in Python with try, except and finally.
+In this project, I learned handling errors and exceptions in Python with `try`, `except` and `finally`.
 
 
 ## Function Prototypes :floppy_disk:
