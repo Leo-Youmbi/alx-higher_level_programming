@@ -1,9 +1,6 @@
-In this project, I learned handling errors and exceptions in Python with try, except and finally.  
+# Python - Exceptions
 
-# Python - More Data Structures: Set, Dictionary
-
-In this project, I learned about sets and dictionaries in Python. I practiced using them
-with the `lambda`, `map`, `filter`, and `reduce` methods.
+In this project, I learned handling errors and exceptions in Python with try, except and finally.
 
 
 ## Function Prototypes :floppy_disk:
