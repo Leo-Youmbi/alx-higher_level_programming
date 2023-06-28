@@ -11,13 +11,13 @@ class Node:
             data (int): value of current node
             next_node (Node, optional): Pointer to next node. Defaults to None.
         """
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
-        """Get/Set the data of a new Node"""
-        return self.__data
+        """Get/set the data of the Node."""
+        return (self.__data)
 
     @data.setter
     def data(self, value):
@@ -27,14 +27,15 @@ class Node:
 
     @property
     def next_node(self):
-        """Get/Set the next node of a node"""
-        return self.__next_node
+        """Get/set the next_node of the Node."""
+        return (self.__next_node)
 
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
 
 
 class SinglyLinkedList:
