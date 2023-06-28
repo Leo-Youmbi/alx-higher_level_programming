@@ -15,7 +15,7 @@ Prototypes for functions written in this project:
 | `4-square.py`      | `class Square:`                                                                   |
 | `5-square.py`             | `class Square:`                                                                          |
 | `6-square.py` | `class Square:`                                                              |
-| `100-singly_linked_list.py`        | <ul><li>`class Node:`</li><li>`class SinglyLinkedList`</li></ul>                                                                         |
+| `100-singly_linked_list.py`        | <ul><li>`class Node:`</li><li>`class SinglyLinkedList:`</li></ul>                                                                         |
 | `101-square.py`     | `class Square:`                                                                       |
 | `102-square.py`        | `class Square:`                                                                |
 
