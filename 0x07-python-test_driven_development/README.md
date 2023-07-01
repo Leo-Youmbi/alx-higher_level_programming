@@ -11,7 +11,7 @@ following eight independently-developed:
   * [2-matrix_divided.txt](./tests/2-matrix_divided.txt)
   * [3-say_my_name.txt](./tests/3-say_my_name.txt)
   * [4-print_square.txt](./tests/4-print_square.txt)
-  * [5-text_indentation.txt](./tests/text_indentation.txt)
+  * [5-text_indentation.txt](./tests/5-text_indentation.txt)
   * [6-max_integer_test.py](./tests/6-max_integer_test.py)
 
 ## Function Prototypes :floppy_disk:
