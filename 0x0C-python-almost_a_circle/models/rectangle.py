@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# rectangle.py
 """Defines a Rectangle class"""
 from base import Base
 
