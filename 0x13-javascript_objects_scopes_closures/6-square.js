@@ -2,10 +2,6 @@
 const Square5 = require('./5-square');
 
 module.exports = class Square extends Square5 {
-  constructor (size) {
-    super(size, size);
-  }
-
   charPrint (char = 'X') {
     for (let i = 0; i < this.height; i++) {
       let str = '';
