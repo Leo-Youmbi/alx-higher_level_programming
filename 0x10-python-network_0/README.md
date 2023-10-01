@@ -60,7 +60,7 @@ At the end of this project, I was able to solve these questions:
 
 ### Try It On Your Machine :computer:	
 ```bash
-git clone https://github.com/leo-youmbi/holbertonschool-higher_level_programming.git
+git clone https://github.com/leo-youmbi/alx-higher_level_programming.git
 cd 0x10-python-network_0
 ./main_files/MAIN_FILENAME.sh
 ```
