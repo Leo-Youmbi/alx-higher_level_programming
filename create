@@ -1,0 +1,12 @@
+#!/bin/bash
+# Create File and make them executable.
+
+if [ $# -eq 1 ]
+then
+	name=$1
+	echo "#!/usr/bin/python3" > "$name"
+	chmod +x "$name"
+	ls -l "$name"
+else
+	echo "Usage: ./createExec [nameOfFile]"
+fi
