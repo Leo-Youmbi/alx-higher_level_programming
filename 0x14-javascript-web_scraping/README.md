@@ -42,7 +42,7 @@ At the end of this project, I was able to solve these questions:
 
 ### Try It On Your Machine :computer:	
 ```bash
-git clone https://github.com/Leo-Youmbi/holbertonschool-higher_level_programming.git
+git clone https://github.com/Leo-Youmbi/alx-higher_level_programming.git
 cd 0x14-javascript-web_scraping
 FOR JS SCRIPTS
 ./FILENAME.js
